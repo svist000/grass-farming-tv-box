@@ -1,2 +1,2 @@
-# Farming [Grass](https://app.getgrass.io/register/?referralCode=sD8cUjUDV1uXTZO)
-Transform your old TV box into a Grass farming device. This guide walks you through repurposing outdated hardware to create an efficient, low-cost node for cryptocurrency farming.
+# Farming [Grass](https://app.getgrass.io/register/?referralCode=sD8cUjUDV1uXTZO) on a old TV Android Box.
+Transform your old TV box into a Grass farming device. This guide walks you through repurposing outdated hardware to create an efficient, low-cost node for cryptocurrency farming. If you want to farm on Android, please leave. We will transfrom Android box into a device with [Armbian](https://www.armbian.com/) OS.
