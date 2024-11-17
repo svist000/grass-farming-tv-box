@@ -4,5 +4,8 @@ Transform your old TV box into a Grass farming device. This guide walks you thro
 ## Download the image
 First, you should download an image of Armbian OS for [S9XX](https://www.armbian.com/amlogic-s9xx-tv-box/). You can check your box [here](https://github.com/devmfc/debian-on-amlogic/blob/main/README.md). I got A95X F3(S905X3) with cpu ARM Cortex-A55. I downloaded Armbian 25.2.0-trunk.13 Bookworm with Gnome for my own comfort. You can download the latest stable version and also without the Gnome, It´s up to you.
 ## Make bootable USB or SD-Card
-You can use programms such as [Rufus](https://rufus.ie/sk/) or [balenaEtcher](https://etcher.balena.io/). File you downloaded, you should extract and then burn image from extracted file using one of this tool(rufus, balenaEtcher,...)
-![photo_2024-10-07_20-06-42](https://github.com/user-attachments/assets/3f895645-a1f8-4878-a14e-cbb5d1b83091)
+You can use programms such as [Rufus](https://rufus.ie/sk/) or [balenaEtcher](https://etcher.balena.io/). File you downloaded, you should extract and then burn image from extracted file using one of this tool(rufus, balenaEtcher,...). Make sure that your image is burned well, your USB will be format into 2 partions(1 particion is OS and next particion are scripts for Armbian, which is visible partiocion). 
+![image](https://github.com/user-attachments/assets/548e5b98-6b0e-4411-8bbe-69a2d9f6914e)
+
+
+
