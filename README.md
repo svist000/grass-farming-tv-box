@@ -9,9 +9,9 @@ You can use programms such as [Rufus](https://rufus.ie/sk/) or [balenaEtcher](ht
 In dtb\amlogic you should find your model or the most similiar to your model e.g. i used for A95XF3 air /dtb/amlogic/meson-sm1-a95xf3-air.dtb . Copy the path and paste into extlinux.conf .
 
 ``` label Armbian_community
-  kernel /Image`
-  initrd /uInitrd`
-  fdt /dtb/amlogic/meson-sm1-a95xf3-air.dtb`
+  kernel /Image
+  initrd /uInitrd
+  fdt /dtb/amlogic/meson-sm1-a95xf3-air.dtb
   append root=UUID=ace05f41-6d5a-4ed4-9f18-92f97628dedc rootflags=data=writeback console=ttyAML0,115200n8 console=tty0 rw no_console_suspend consoleblank=0 fsck.fix=yes fsck.repair=yes net.ifnames=0 splash plymouth.ignore-serial-consoles```
   
 
