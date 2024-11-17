@@ -4,12 +4,12 @@ Transform your old TV box into a Grass farming device. This guide walks you thro
 ## Download the image
 First, you should download an image of Armbian OS for [S9XX](https://www.armbian.com/amlogic-s9xx-tv-box/). You can check your box [here](https://github.com/devmfc/debian-on-amlogic/blob/main/README.md). I got A95X F3(S905X3) with cpu ARM Cortex-A55. I downloaded Armbian 25.2.0-trunk.13 Bookworm with Gnome for my own comfort. You can download the latest stable version and also without the Gnome, It´s up to you.
 ## Make bootable USB or SD-Card
-You can use programms such as [Rufus](https://rufus.ie/sk/) or [balenaEtcher](https://etcher.balena.io/). File you downloaded, you should extract and then burn image from extracted file using one of this tool(rufus, balenaEtcher,...). Make sure that your image is burned well, your USB will be format into 2 partions(1 particion is OS and next particion are scripts for Armbian, which is visible partiocion). 
+You can use programms such as [Rufus](https://rufus.ie/sk/) or [balenaEtcher](https://etcher.balena.io/). File you downloaded, you should extract and then burn image from extracted file using one of this tool(rufus, balenaEtcher,...). Make sure that your image is burned well, your USB will be format into 2 partions(1 partition is OS and next partition are scripts for Armbian, which is visible partiocion). 
 
 ![Partiocion that you can open](https://github.com/user-attachments/assets/548e5b98-6b0e-4411-8bbe-69a2d9f6914e)
 
-## Modify scripts in visible particion
-When you open visible particion, in dtb\amlogic you should find your model or the most similiar to your´s e.g. i used for A95XF3 air /dtb/amlogic/meson-sm1-a95xf3-air.dtb . Copy the path and paste into extlinux.conf.  Do not forget uncomennt lines and paste there `fdt /dtb/amlogic/meson-sm1-a95xf3-air.dtb` (path to your your model).
+## Modify scripts in visible partition
+When you open visible partition, in dtb\amlogic you should find your model or the most similiar to your´s e.g. i used for A95XF3 air /dtb/amlogic/meson-sm1-a95xf3-air.dtb . Copy the path and paste into extlinux.conf.  Do not forget uncomennt lines and paste there `fdt /dtb/amlogic/meson-sm1-a95xf3-air.dtb` (path to your your model).
 Then, your config file should look like this:
 
 `extlinux.conf `
@@ -23,6 +23,13 @@ Then, your config file should look like this:
  Rename file `u-boot-s905x3` into `u-boot.ext`
  
 ![Rename File](https://github.com/user-attachments/assets/3b53d8f7-34bb-445d-8ccc-f216265b6626)
+
+## Boot your device.
+I used USB for booting. Plug usb into the device. Plug device in electricity and at the same time stick something small, like a toothpick, into the AV port and hold for about 10 seconds. Then the devices should start booting. Then you should setup your OS with name, pass, etc... We´re done.
+
+![Armbian Booting](https://github.com/user-attachments/assets/3db1c011-44c0-4949-97b7-7001531eec53)
+
+
 
 
 
