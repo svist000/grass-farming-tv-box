@@ -8,6 +8,7 @@ You can use programms such as [Rufus](https://rufus.ie/sk/) or [balenaEtcher](ht
 ![image](https://github.com/user-attachments/assets/548e5b98-6b0e-4411-8bbe-69a2d9f6914e)
 In dtb\amlogic you should find your model or the most similiar to your model e.g. i used for A95XF3 air /dtb/amlogic/meson-sm1-a95xf3-air.dtb . Copy the path and paste into extlinux.conf .
 
+extlinux.conf file:
 ``` label Armbian_community
   kernel /Image
   initrd /uInitrd
