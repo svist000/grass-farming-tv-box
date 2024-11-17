@@ -8,9 +8,10 @@ You can use programms such as [Rufus](https://rufus.ie/sk/) or [balenaEtcher](ht
 
 ![Partiocion that you can open](https://github.com/user-attachments/assets/548e5b98-6b0e-4411-8bbe-69a2d9f6914e)
 
-In dtb\amlogic you should find your model or the most similiar to your model e.g. i used for A95XF3 air /dtb/amlogic/meson-sm1-a95xf3-air.dtb . Copy the path and paste into extlinux.conf .
+## Modify scripts in visible particion
+When you open visible particion, in dtb\amlogic you should find your model or the most similiar to your´s e.g. i used for A95XF3 air /dtb/amlogic/meson-sm1-a95xf3-air.dtb . Copy the path and paste into extlinux.conf .
 
-`extlinux.conf file: `
+`extlinux.conf file: ` Uncomennt lines a put 'fdt /dtb/amlogic/meson-sm1-a95xf3-air.dtb' (path with your model)
 ```
  label Armbian_community
   kernel /Image
