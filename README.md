@@ -16,6 +16,7 @@ In dtb\amlogic you should find your model or the most similiar to your model e.g
   fdt /dtb/amlogic/meson-sm1-a95xf3-air.dtb
   append root=UUID=ace05f41-6d5a-4ed4-9f18-92f97628dedc rootflags=data=writeback console=ttyAML0,115200n8 console=tty0 rw no_console_suspend consoleblank=0 fsck.fix=yes fsck.repair=yes net.ifnames=0 splash plymouth.ignore-serial-consoles
 ```
-  
+ Rename `u-boot-s905x3` into `u-boot.ext`
+![image](https://github.com/user-attachments/assets/1c98af30-d91e-482b-bfdc-99bd03d96077)
 
 
