@@ -28,6 +28,7 @@ Then, your config file should look like this:
 I used USB for booting. Plug usb into the device. Plug device in electricity and at the same time stick something small, like a toothpick, into the AV port and hold for about 10 seconds. Then the devices should start booting. Then you should setup your OS with name, pass, etc... We´re done.
 
 ![Armbian Booting](https://github.com/user-attachments/assets/3db1c011-44c0-4949-97b7-7001531eec53)
+<img src="[https://github.com/user-attachments/assets/3db1c011-44c0-4949-97b7-7001531eec53]" alt="Armbian Booting" width="500"/>
 
 
 
