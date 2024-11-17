@@ -29,6 +29,9 @@ I used USB for booting. Plug usb into the device. Plug device in electricity and
 
 ![Armbian Booting](https://github.com/user-attachments/assets/5fc2d12d-2b8b-4497-bb94-25c6a6119b1e)
 
+# Step 2: Connect to your device
+You can connect by direct input
+
 
 
 
