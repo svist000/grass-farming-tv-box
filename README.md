@@ -41,7 +41,7 @@ Open terminal and write
 `sudo nano /etc/gdm3/daemon.conf`
  Also uncomment the existing line `#WaylandEnable=false`  -->   `WaylandEnable=false`
 
-## Option 2 
+## Option 2(SSH)
 You need to know your´s device local IP address. Use this command in your Linux: 
 
 `ip a`
@@ -55,6 +55,9 @@ Or use Putty:
 ![image](https://github.com/user-attachments/assets/5b4eb781-0efd-48e1-83ab-d8120844265a)
 
 You should log by your password.
+
+# Step 3: Start farming
+If you have desktop version, you can start farming immediatly installing Brave Browser(Chromium doesn´t work for me). Brave support Chrome extensions. So you can simply search for [Grass](https://app.getgrass.io/register/?referralCode=sD8cUjUDV1uXTZO) [extension in brave](https://chromewebstore.google.com/detail/grass-lite-node/ilehaonighjijnmpnagapkhpcdbhclfg).
 
 
 
