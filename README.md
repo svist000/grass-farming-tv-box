@@ -30,7 +30,33 @@ I used USB for booting. Plug usb into the device. Plug device in electricity and
 ![Armbian Booting](https://github.com/user-attachments/assets/5fc2d12d-2b8b-4497-bb94-25c6a6119b1e)
 
 # Step 2: Connect to your device
-You can connect by direct input
+First, connect the device to a monitor using an HDMI cable, and attach a mouse and keyboard. Be sure, your device is connected to the internet. If you have GNOME, you can download and install Teamviewer, if not you can connect by SSH(e.g. Putty, CMD),so you won't need to connect using an external keyboard later. 
+## Option 1(Teamviewer)
+Simply download and install Teamviewer for linux arm64-64bit. You might see a pop-up window, and your TeamViewer may display a message such as 'deactivated.'"
+
+![tw](https://github.com/user-attachments/assets/93895937-ac8c-4013-985d-9afc68707bfa)
+
+To avoid this problem follow this step:
+Open terminal and write
+`sudo nano /etc/gdm3/daemon.conf`
+ Also uncomment the existing line `#WaylandEnable=false`  -->   `WaylandEnable=false`
+
+## Option 2 
+You need to know your´s device local IP address. Use this command in your Linux: 
+
+`ip a`
+
+Using CMD you can connect from you PC to the device by this command: 
+
+`ssh username@IP_address` 
+
+Or use Putty:
+
+![image](https://github.com/user-attachments/assets/5b4eb781-0efd-48e1-83ab-d8120844265a)
+
+You should log by your password.
+
+
 
 
 
