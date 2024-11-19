@@ -54,7 +54,7 @@ If you have installed SSH server on your device, you can skip next few commands.
 
 `sudo service ssh stop` - stop SSH Server.
 
-You need to know your´s device local IP address. Use this command in your Linux: 
+ You need to know your´s device local IP address. Use this command in your Linux: 
 
 `ip a`
 
