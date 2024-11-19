@@ -43,10 +43,15 @@ Open terminal and write
 
 ## Option 2(SSH)
 If you have installed SSH server on your device, you can skip next few commands.
+
 `sudo apt update` - to update system,
+
 `sudo apt install openssh-server` - install SSH Server,
+
 `sudo systemctl status ssh` - chceck status if run or not,
+
 `sudo service ssh start` - start SSH Server,
+
 `sudo service ssh stop` - stop SSH Server.
 
 You need to know your´s device local IP address. Use this command in your Linux: 
