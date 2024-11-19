@@ -79,6 +79,7 @@ If you have desktop version, you can start farming immediatly installing Brave B
 [Docker on Armbian Docs](https://docs.armbian.com/User-Guide_Advanced-Features/#how-to-run-docker)
 Simply, you should switch to root sudo -su
 install-docker.sh   create bash
+```sh
 chmod a+x /root/install-docker.sh
 apt-get remove docker docker-engine docker.io containerd runc
 apt-get install ca-certificates curl gnupg lsb-release
@@ -87,6 +88,7 @@ curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o 
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 apt update
 apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+```
 
  **````sh`**: Označuje začiatok bloku kódu s označením pre syntax shellu (`sh`).
 2. **`#!/bin/bash`**: Označuje, že ide o shellový skript pre Bash.
