@@ -25,9 +25,11 @@ Then, your config file should look like this:
 ![Rename File](https://github.com/user-attachments/assets/3b53d8f7-34bb-445d-8ccc-f216265b6626)
 
 ## Boot your device.
-I used USB for booting. Plug usb into the device. Plug device in electricity and at the same time stick something small, like a toothpick, into the AV port and hold for about 10 seconds. Then the devices should start booting. Then you should setup your OS with name, pass, etc... We´re done.
+I used USB for booting. Plug usb into the device. Plug device in electricity and at the same time stick something small, like a toothpick, into the AV port and hold for about 10 seconds. Then the devices should start booting. Then you should setup your OS with name, pass, etc... We´re done. 
 
 ![Armbian Booting](https://github.com/user-attachments/assets/5fc2d12d-2b8b-4497-bb94-25c6a6119b1e)
+
+If you´re satisfied with your OS, you can set it permanently. Log as root and run `./install-aml.sh`. BE CAREFUL, this will COMPLETELY DELETE YOUR PREVIOUS ANDROID, it´s up to you.
 
 # Step 2: Connect to your device
 First, connect the device to a monitor using an HDMI cable, and attach a mouse and keyboard. Be sure, your device is connected to the internet. If you have GNOME, you can download and install Teamviewer, if not you can connect by SSH(e.g. Putty, CMD),so you won't need to connect using an external keyboard later. 
@@ -54,6 +56,7 @@ If you have installed SSH server on your device, you can skip next few commands.
 
 `sudo service ssh stop` - stop SSH Server.
 
+### Connect
  You need to know your´s device local IP address. Use this command in your Linux: 
 
 `ip a`
@@ -67,13 +70,36 @@ Or use Putty:
 ![image](https://github.com/user-attachments/assets/5b4eb781-0efd-48e1-83ab-d8120844265a)
 
 
-Otherwise you don´t have created SSH
 
 # Step 3: Start farming
 If you have desktop version, you can start farming immediatly installing Brave Browser(Chromium doesn´t work for me). Brave support Chrome extensions. So you can simply search for [Grass](https://app.getgrass.io/register/?referralCode=sD8cUjUDV1uXTZO) [extension in brave](https://chromewebstore.google.com/detail/grass-lite-node/ilehaonighjijnmpnagapkhpcdbhclfg). You can also farm using Docker Containers. 
 
 ## Docker
 ### Install Docker
+[Docker on Armbian Docs](https://docs.armbian.com/User-Guide_Advanced-Features/#how-to-run-docker)
+Simply, you should switch to root sudo -su
+install-docker.sh   create bash
+chmod a+x /root/install-docker.sh
+apt-get remove docker docker-engine docker.io containerd runc
+apt-get install ca-certificates curl gnupg lsb-release
+mkdir -p /etc/apt/keyrings
+curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+apt update
+apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+
+ **````sh`**: Označuje začiatok bloku kódu s označením pre syntax shellu (`sh`).
+2. **`#!/bin/bash`**: Označuje, že ide o shellový skript pre Bash.
+3. **Kód vo vnútri**: Vložte svoj skript medzi začiatok a koniec bloku.
+4. **`````**: Označuje koniec bloku kód
+
+Test docker:
+docker run hello-world
+### Docker Commands:
+docker run <image_name>
+docker ps
+docker ps -a
+docker start xxxxx?
 
 
 
