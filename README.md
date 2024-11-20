@@ -78,7 +78,7 @@ If you have desktop version, you can start farming immediatly installing Brave B
 ### Install Docker
 [Docker on Armbian Docs](https://docs.armbian.com/User-Guide_Advanced-Features/#how-to-run-docker)
 
-Simply, you should switch to root `sudo -su`.Create a bash script for install
+Simply, you should switch to root `sudo -su`. Create a bash script for install `sudo nano /home/install-docker.sh`
 
 `install-docker.sh`
 ```bash
@@ -90,23 +90,21 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.
 apt update
 apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 ```
-Give permission to execute `chmod a+x ./install-docker.sh` and execute `sudo ./install-docker.sh`
+Give permission to execute `sudo chmod a+x ./install-docker.sh` and execute `sudo ./install-docker.sh`
 
 ### Run Grass Container
 Test docker: `docker run hello-world`
-
-You must change `your_email` and `your_password`
 
 `docker run -d --name grass -h my_device -e GRASS_USER=your_email -e GRASS_PASS=your_password mrcolorrain/grass` - grass extension
 
 `docker run -d --name grass-node -h my_device -e USER_EMAIL=your_email -e USER_PASSWORD=your_password -p 5900:5900 -p 6080:6080 mrcolorrain/grass-node` - grass node
 
+You must change `your_email` and `your_password`.
+
 
 ### Docker Commands:
-docker run <image_name>
-docker ps
-docker ps -a
-docker start xxxxx?
+`docker run <image_name>` - run docker container,  `docker ps` - show all containers, `docker ps -a` - show all active containers.
+
 
 
 
