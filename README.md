@@ -79,7 +79,7 @@ If you have desktop version, you can start farming immediatly installing Brave B
 [Docker on Armbian Docs](https://docs.armbian.com/User-Guide_Advanced-Features/#how-to-run-docker)
 Simply, you should switch to root sudo -su
 create a bash script for install install-docker.sh
-```sh
+```bash
 apt-get remove docker docker-engine docker.io containerd runc
 apt-get install ca-certificates curl gnupg lsb-release
 mkdir -p /etc/apt/keyrings
@@ -88,7 +88,9 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.
 apt update
 apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 ```
-chmod a+x /root/install-docker.sh
+Give permission to execute `chmod a+x ./install-docker.sh` and execute `sudo ./install-docker.sh`
+
+Run Grass Container
 
 
 Test docker:
