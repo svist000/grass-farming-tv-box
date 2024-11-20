@@ -77,6 +77,7 @@ If you have desktop version, you can start farming immediatly installing Brave B
 ## Docker
 ### Install Docker
 [Docker on Armbian Docs](https://docs.armbian.com/User-Guide_Advanced-Features/#how-to-run-docker)
+
 Simply, you should switch to root `sudo -su`.Create a bash script for install
 
 `install-docker.sh`
